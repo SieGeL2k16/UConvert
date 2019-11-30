@@ -1,0 +1,87 @@
+
+         UCONVERT V0.5 by SieGeL aND sTRIDER oF (tRSi/F-iNNOVATiON)
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you are running currently the Amiex System but you want to change to the
+FAME System, one of the main problems are the user.datas, because normally
+you have to delete them or you must convert every user of your BBS to FAME
+by hand...this could become a hard job when you have about 300 users like I
+have in my BBS. UConvert is the right solution for this problem, as it is
+able to convert all your Amiex User.datas into the FAME format and also copy
+all neccessary settings, too, so the users won't notice that their accounts
+have been moved (except that FAME has a lot more features no other BBS has),
+because all Byte- and Filesettings, conference-accesses, level-settings,
+calls etc. are copied to the FAME-Format. UConvert will set all deleted
+users from your Amiex user.datas as Inactive, so they won't be deleted
+when a Newuser enters the FAME!
+
+NOTE: Amiex has a hard-core method to save the passwords of the users! The
+      passwords will be crypted with an one-way algorithm, meaning that
+      Amiex itself won't be able to decrypt the Password after saving it
+      to the user.datas!! Because of this, UConvert will normally write as
+      password for all converted users the name of the user. But we have
+      managed it to solve this problem, too!! Before switching to FAME,
+      built the AutoPW door into your Amiex System as Syscommand 'S', best
+      way is to install it about one month before switching to FAME. This
+      door is able to collect the Passwords from all users and store them
+      in a seperate file. This file will then be readen and used by UConvert
+      to fill in the passwords!!! See AutoPW.doc for further informations
+      about this door.
+
+New for V0.5:
+~~~~~~~~~~~~~
+Some people had reported some mistakes during the Usage of UConvert...well
+Strider and I have searched about three hours for any mistakes but found 
+NOTHING strange! We have now set up additional features of FAME to Ask
+state or simply switched them on. If you still have problems with this
+program, please contact SieGeL/tRSi under siegel@deadline.snafu.de or call
+my BBS and leave me a *FULL DETAILED BUG-REPORT WHAT IS WRONG DURING THE
+CONVERTING OF YOUR USER.DATAS* !!! 
+Otherwise I won't be able to fix anything !
+
+                                  Usage:
+                                  ~~~~~~
+
+First make sure that no users are online when converting the user.datas,
+because that may cause trouble during the convert process!
+
+Start UConvert with the following arguments:
+
+        UConvert <AMIEX_USER_DATA_PATH> <PATH_TO_CREATE_NEW_DATAS>
+
+                         i.e.: UConvert BBS: RAM:
+
+This will search for 'BBS:user.data', 'BBS:user.keys' and 'BBS:user.misc'
+and convert all three datafiles to the FAME-datafiles 'RAM:user.data' and
+'RAM:user.keys'. UConvert first checks the amount of users stored in your
+Amiex user.datas and will then convert all users.
+After it has been finished with the converting you will be asked if you have
+the AutoPW door from ByteAndi/tRSi installed (See NOTE above for more
+informations why this door is required). If you haven't installed it, enter
+'N' at the prompt and UConvert will exit silently. You have to check then
+the password of every user in the converted user.datas, because UConvert is
+only able to write as Password the User's name if you don't have used AutoPW
+before convert the user.datas. Don't blame me for this, Amiex itself won't
+be able to decrypt it's own (!) passwords after crypting/saving them.
+
+But if you have installed AutoPW and most of your users have entered their
+Password, answer with 'Y' at the prompt and UConvert will now check out the
+database AutoPW creates in BBS:user.pw and write all found passwords in the
+according user.datas. During this procedure, UConvert prints out all users
+including their slotnumbers for whom UConvert has found a password.
+Users which haven't written their Password included in the AutoPW database
+will be set to inactive state automatically, but *ONLY* when using AutoPW
+and the AutoPW collector has collected from ALL your users !! If not, the
+users which aren't included won't be touched from UConvert!
+
+After finishing, you will now be able to use the converted user.datas
+together with FAME ! Simply copy them to the place you've defined in the
+SystemEditor of FAME, and everything works fine. You should also mail an
+EALL for your users describing that you've changed to FAME and that they
+should re-configure their settings to use the full power of FAME.
+
+Have fun with your FAME-System,
+
+           Sascha "SieGeL" Pfalz - Leader of (tRSi/F-iNNOVATiON)
+
+               David "Strider" Wettig of (tRSi/F-iNNOVATiON)

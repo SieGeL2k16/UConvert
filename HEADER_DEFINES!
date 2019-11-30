@@ -1,0 +1,13 @@
+MsgHeader.dat:
+"FAMEMAHE$VER:FAME v0.75 beta (25.03.95)                     " + 0 byte
+
+MsgStatus.dat
+"FAMEMAST$VER:FAME v0.75 beta (25.03.95)                     " + 0 byte
+
+user.data:
+"FAMEUSDA$VER:FAME v0.75 beta (25.03.95)                     " + 0 byte
+
+user.keys:
+"FAMEUSKE$VER:FAME v0.75 beta (25.03.95)                     " + 0 byte
+
+machen 61 bytes als header.....

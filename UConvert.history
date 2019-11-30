@@ -1,0 +1,70 @@
+=============================================================================
+=                                                                           =
+=     Amiex To FAME User.Data Converter by SieGeL (tRSi/X-/F-iNNOVATiON)    =
+=                                                                           =
+=============================================================================
+
+                       PROGRAM-HISTORY FOR UCONVERT:
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+V0.01  (??-??-??)  -  First complete Version, only for switching my user.data
+                      from Amiex to FAME.
+
+V0.02  (??-??-??)  -  Updated to the latest user.data structs of FAME, again
+                      only a internal Update.
+
+v0.3   (03-25-96)  -  Pre-Release Version
+
+                     +Updated the FAME user.data to MainPart V0.368ß. Also
+                      made some cosmetical changings when using this tool.
+
+                     +Added password-scanner for AutoPW. If you have run the
+                      AutoPW door from ByteAndi/tRSi to collect all your user
+                      passwords, UConvert will now read in (if you wish!) the
+                      database created by AutoPW and inserts all existing
+                      passwords to your converted FAME user.data. This
+                      requires the AutoPW Database found in BBS:user.pw .
+
+
+v0.4   (05-05-96)  -  New release version
+
+                     +When using AutoPW from ByteAndi, all users which have
+                      not entered their Password will be set automatically to
+                      the inactive state under FAME. But be warned, UConvert
+                      runs through the AutoPW database and only set this state
+                      to users, which are in the AutoPW database but have no
+                      password entered. So if your BBS has 1000 Users, AutoPW
+                      has collected PW's from user 1-800, the rest of the
+                      users (801-1000) keep untouched from UConvert, because
+                      they aren't in the AutoPW database.
+
+V0.5  (09-15-96)  -   Rumour Version ;)
+
+                     +Some people had reported some mistakes during the Usage
+                      of UConvert...well Strider and I have searched about
+                      three hours for any mistakes but found NOTHING strange!
+                      We have now set up additional features of FAME to Ask
+                      state or simply switched them on. If you still have
+                      problems with this program, please contact SieGeL/tRSi
+                      under siegel@deadline.snafu.de or call my BBS and leave
+                      me a *FULL DETAILED BUG-REPORT WHAT IS WRONG DURING 
+                      THE CONVERTING OF YOUR USER.DATAS* !!! Otherwise I won't
+                      be able to fix anything !
+
+---------------------------------------------------------------------[BOF]----
+   ______ __ __ _____ __ _____ __ __ ________ _____ _____ __
+  _)  ._ Y_ | _Y     Y__Y_   _Y  | _Y       _Y   __Y    _Y  l_
+  \_  |/  / | \_  |  |   / `-\_    \_  |  | \_  _/\_  | \_  _/_
+   |   __/  |  |  |  |  /--,  |  |  |  |  |  |  l  |  |  |  l  |  | __  __
+   l__|  l_____l__|  l_/l__   l__|  l__|  |  l__   l__|  l__   |  |(  )l__,
+       2F         `--'     `--'  `--'  `--l__|  `--'  `--'  `--'
+
+   - (tRSi-iNNOVATiONs) WHQ & bETA sITE - cONTRA! gHQ - hOAX dIST sITE ·
+
+     - eTHIC fRIENDSHIP bOARD - jUICY dILDOS GHQ - fAME sUPPORT BBS -
+
+ - 1oo% lEGAL sTUFF oN aM¡Ga^PC - sYSTEM-cHIEFS: SieGeL/tRSi & aRGON/tRSi -
+
+#0: +49(o)3o 694 84 7o (v.34 / 28.8k)   #1: +49(o)3o 694 85 7o (v.34+ / 33.6k)
+
+---------------------------------------------------------------------[EOF]----
